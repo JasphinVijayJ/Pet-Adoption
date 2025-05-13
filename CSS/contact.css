@@ -1,0 +1,419 @@
+/* -------------------Most Common Used ---------------------- */
+
+.gradient-highlight {
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* -------------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+    /* To make it scroll smoothly instead of jumping directly. */
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #555;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* -------------------------------------------------------------- */
+
+#scrollArrow {
+    position: fixed;
+    z-index: 3;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    /* Hide for now and use JS for show the arrow */
+}
+
+#scrollArrow>img {
+    width: 50px;
+    transition: transform 0.3s;
+}
+
+#scrollArrow>img:hover {
+    transform: scale(1.2);
+}
+
+/* -------------------------------------------------------------- */
+
+header {
+    background-image: url(../Images/dog-1.avif);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+header>h1 {
+    position: absolute;
+    top: 160px;
+    left: 220px;
+    font-size: 50px;
+}
+
+.nav-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    border-bottom: 2px solid lightgray;
+}
+
+.nav-section>img {
+    width: 100px;
+    height: 80px;
+    margin-left: 60px;
+}
+
+.nav-top {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    column-gap: 60px;
+}
+
+.nav-top a {
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+}
+
+.nav-top a:hover {
+    transform: scale(1.2);
+    color: deeppink;
+}
+
+/* -------------------------------------------------------------- */
+
+.contact-section {
+    margin-top: 100px;
+}
+
+.contact-box {
+    box-shadow: 0 0px 8px lightgray;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    color: #555;
+}
+
+.contact-box:hover {
+    transform: scale(1.04);
+}
+
+/* -------------------------------------------------------------- */
+
+.form-section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 50px 40px;
+    justify-self: center;
+    text-align: center;
+    box-shadow: 0px 0px 8px lightgray;
+    border-radius: 16px;
+    margin: 100px 0;
+}
+
+.form-section>h2 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.top-span {
+    border-bottom: 3px solid #ff9472;
+    border-radius: 1px;
+}
+
+.input-group>input,
+textarea {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    outline: none;
+    resize: none;
+}
+
+.input-group>input:focus,
+.input-group>textarea:focus {
+    border-bottom: 3px solid #f2709c;
+}
+
+.input-group>small {
+    color: red;
+    font-weight: 600;
+}
+
+.button-1 {
+    width: 100%;
+    max-width: 300px;
+    padding: 16px;
+    color: white;
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button-1:hover {
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    box-shadow: 1px 1px 8px rgba(240, 129, 59, 0.6);
+}
+
+/* -------------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: #1d1d1d;
+    margin-top: 80px;
+}
+
+footer>h1 {
+    text-align: center;
+    padding: 60px 0;
+    margin: 0;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: lightgray;
+}
+
+.footer-box {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-details h3 {
+    margin: 0;
+}
+
+.footer-box div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* -------------------------------------------------------------- */
+
+.nav-bottom {
+    display: flex;
+    column-gap: 60px;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(35, 36, 37);
+}
+
+.nav-bottom a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* -------------------------------------------------------------- */
+
+footer>p {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------- */
+
+@media screen and (max-width:430px) {
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 200px;
+    }
+
+    header>h1 {
+        top: 100px;
+        left: 50px;
+        font-size: 35px;
+    }
+
+    .contact-box {
+        max-width: 250px;
+    }
+
+    .form-section {
+        max-width: 250px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .form-section>h2 {
+        font-size: 35px;
+    }
+
+    .input-group>input,
+    textarea {
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    .footer-box div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-bottom {
+        column-gap: 10px;
+    }
+}
+
+@media screen and (min-width:430px) and (max-width:600px) {
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 280px;
+    }
+
+    header>h1 {
+        top: 120px;
+        left: 70px;
+        font-size: 35px;
+    }
+
+    .contact-box {
+        max-width: 250px;
+    }
+
+    .form-section {
+        max-width: 300px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-group>input,
+    textarea {
+        max-width: 250px;
+    }
+
+    .footer-box div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-bottom {
+        column-gap: 20px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    header>h1 {
+        left: 100px;
+    }
+
+    .form-section {
+        max-width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-group>input,
+    textarea {
+        max-width: 350px;
+    }
+}
+
+/* -------------------------------------------------------------- */
+
+/* mobile navigation bar (hamburger menu) */
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    transition: transform 0.3s ease;
+}
+
+.menu:hover {
+    transform: rotate(360deg);
+}
+
+.menu div {
+    height: 4px;
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.menu div:hover {
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width:768px) {
+    .menu {
+        display: flex;
+    }
+
+    .nav-top {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 2px solid lightgray;
+    }
+
+    .nav-top.show {
+        display: flex;
+    }
+
+    .nav-top>a {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+/* -------------------------------------------------------------- */
