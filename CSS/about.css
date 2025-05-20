@@ -201,7 +201,7 @@ header>h1 {
 
 .process-divs img {
   width: 100%;
-  max-height: 240px;
+  height: 240px;
   border-radius: 30px;
 }
 
@@ -293,11 +293,7 @@ footer>p {
   }
 
   .process-divs>h2 {
-    font-size: 16px;
-  }
-
-  .process-divs>p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .who-and-promise {
@@ -340,21 +336,13 @@ footer>p {
   }
 
   .process {
-    gap: 15px;
-    margin: 0px 20px;
-  }
-
-  .process-divs {
-    padding: 15px;
-    line-height: 1.3;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 40px;
   }
 
   .process-divs>h2 {
-    font-size: 16px;
-  }
-
-  .process-divs>p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .who-and-promise {
