@@ -495,8 +495,9 @@ footer>p {
   }
 
   .process {
-    gap: 10px;
-    margin: 0px 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 40px;
   }
 
   .process-divs {
