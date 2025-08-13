@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt & Love | Pets</title>
+    <link rel="icon" href="../Images/Icons/Logo-Icon.png">
+    <link rel="stylesheet" href="../CSS/pets.css">
+</head>
+
+<body>
+
+    <a href="#for-arrow" id="scrollArrow">
+        <img src="../Images/Icons/Up_Arrow_Icon.png" alt="Up-Arrow-Icon-image">
+    </a>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <header id="for-arrow">
+        <h1 class="gradient-highlight">Pet Adoption</h1>
+
+        <section class="nav-section">
+            <img src="../Images/Website-Logo.jpeg" alt="Website-Logo-image">
+
+            <div class="menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav class="nav-top" id="mobileMenu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="pets.html">Pets</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </section>
+    </header>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <section class="adoption-section">
+        <div class="adoption adoption-intro">
+            <h1>Adopt a Pet – Change a Life</h1>
+
+            <p>Looking to add a new member to your family? Adopting a pet not only gives a homeless animal a second
+                chance, but it also fills your life with unconditional love and joy.</p>
+
+            <p>Our adoption process is simple and focused on matching you with the perfect pet, whether it’s an
+                energetic puppy or a calm adult cat.</p>
+        </div>
+
+        <div class="adoption adoption-details">
+            <h3>Ready for Adoption – What You Can Expect</h3>
+
+            <ul class="ul-icon">
+                <li><img src="../Images/Icons/Paw-Print-Icon-3.png" alt="Paw-Print-Icon-3-image">All pets are vaccinated
+                    and neutered/spayed</li>
+                <li><img src="../Images/Icons/Paw-Print-Icon-3.png" alt="Paw-Print-Icon-3-image">Each pet receives a
+                    full veterinary health check-up</li>
+                <li><img src="../Images/Icons/Paw-Print-Icon-3.png" alt="Paw-Print-Icon-3-image">We help match you with
+                    the right pet for your lifestyle</li>
+                <li><img src="../Images/Icons/Paw-Print-Icon-3.png" alt="Paw-Print-Icon-3-image">We provide
+                    post-adoption support for a smooth transition</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <div class="filter-buttons">
+        <button id="allbtn" class="activeButton" onclick="filterPets('all', 'allbtn')">All</button>
+        <button id="dogsbtn" onclick="filterPets('dogs', 'dogsbtn')">Dogs</button>
+        <button id="catsbtn" onclick="filterPets('cats', 'catsbtn')">Cats</button>
+        <button id="othersbtn" onclick="filterPets('others', 'othersbtn')">Others</button>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <section class="pet-list">
+        <!-- ------------------------- Dogs --------------------------------------- -->
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-1.jpg" alt="dog-adoption-1-image">
+            <h2>Fluffy</h2>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Arrived:</strong> May 1, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-2.jpg" alt="dog-adoption-2-image">
+            <h2>Jack</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 8 months</p>
+            <p><strong>Arrived:</strong> Jan 13, 2025</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-3.jpg" alt="dog-adoption-3-image">
+            <h2>Joanne</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 5 years</p>
+            <p><strong>Arrived:</strong> Mar 21, 2024</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-4.jpg" alt="dog-adoption-4-image">
+            <h2>Cutesy</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 3 months</p>
+            <p><strong>Arrived:</strong> Jan 10, 2025</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-5.jpg" alt="dog-adoption-5-image">
+            <h2>Lucky</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 5 years</p>
+            <p><strong>Arrived:</strong> Apr 20, 2022</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-6.jpg" alt="dog-adoption-6-image">
+            <h2>Rocky</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 3 years</p>
+            <p><strong>Arrived:</strong> Jan 15, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-7.jpg" alt="dog-adoption-7-image">
+            <h2>Luna</h2>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Age:</strong> 1 years</p>
+            <p><strong>Arrived:</strong> Feb 28, 2024</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-8.jpg" alt="dog-adoption-8-image">
+            <h2>Max</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Arrived:</strong> Jul 8, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-9.jpg" alt="dog-adoption-9-image">
+            <h2>Bella</h2>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Age:</strong> 4 years</p>
+            <p><strong>Arrived:</strong> Oct 10, 2022</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card dogs">
+            <img src="../Images/Pets-Adoption/Dogs/dog-adoption-10.jpg" alt="dog-adoption-10-image">
+            <h2>Daisy</h2>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Age:</strong> 6 years</p>
+            <p><strong>Arrived:</strong> May 5, 2021</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <!-- ------------------------- Cats --------------------------------------- -->
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-1.jpg" alt="cat-adoption-1-image">
+            <h2>Charlie</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Arrived:</strong> Jul 6, 2024</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-2.jpg" alt="cat-adoption-2-image">
+            <h2>Magdalene</h2>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Arrived:</strong> Nov 16, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-3.jpg" alt="cat-adoption-3-image">
+            <h2>Kittie</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 1 years</p>
+            <p><strong>Arrived:</strong> Sept 22, 2024</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-4.jpg" alt="cat-adoption-4-image">
+            <h2>Oscar</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 5 years</p>
+            <p><strong>Arrived:</strong> Mar 29, 2022</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-5.jpg" alt="cat-adoption-5-image">
+            <h2>Whiskers</h2>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Age:</strong> 4 years</p>
+            <p><strong>Arrived:</strong> Sept 3, 2024</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-6.jpg" alt="cat-adoption-6-image">
+            <h2>Milo</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Arrived:</strong> May 12, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card cats">
+            <img src="../Images/Pets-Adoption/Cats/cat-adoption-7.jpg" alt="cat-adoption-7-image">
+            <h2>Shadow</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 3 years</p>
+            <p><strong>Arrived:</strong> Aug 21, 2022</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <!-- ------------------------- Others --------------------------------------- -->
+        <div class="pet-card others">
+            <img src="../Images/Pets-Adoption/Others/other-adoption-1.jpg" alt="other-adoption-1-image">
+            <h2>Spiker</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Arrived:</strong> Aug 14, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card others">
+            <img src="../Images/Pets-Adoption/Others/other-adoption-2.jpg" alt="other-adoption-2-image">
+            <h2>Nugget</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 6 months</p>
+            <p><strong>Arrived:</strong> Feb 14, 2024</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+
+        <div class="pet-card others">
+            <img src="../Images/Pets-Adoption/Others/other-adoption-3.jpg" alt="other-adoption-3-image">
+            <h2>Peanut</h2>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Age:</strong> 1 years</p>
+            <p><strong>Arrived:</strong> Dec 5, 2023</p>
+            <button><b>Adopt Pet</b></button>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <section class="help-section">
+        <h1 class="gradient-highlight">Have Questions?</h1>
+
+        <p>If you have any doubts or need more information about the adoption process, feel free to contact us. Our team
+            is always happy to assist you!</p>
+
+        <button class="button-1" onclick="window.location.href='contact.html'"><b>Contact Us</b></button>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <footer>
+        <h1 class="gradient-highlight">Adopt & Love</h1>
+
+        <section class="footer-list">
+            <div class="footer-box">
+                <div>
+                    <img src="../Images/Icons/Location_Icon.png" alt="Location_Icon-image">
+                </div>
+                <div class="footer-details">
+                    <h3>Address</h4>
+                        <p>Saravana Gens Hostel, Velachery, <br> Chennai, 600042.</p>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <div>
+                    <img src="../Images/Icons/Phone_Icon.png" alt="Phone_Icon-image">
+                </div>
+                <div class="footer-details">
+                    <h3>Contact Us</h3>
+                    <p>Office: 7305120325</p>
+                    <p>Inquiries: 7339372547</p>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <div>
+                    <img src="../Images/Icons/Clock_Icon.png" alt="Clock_Icon-image">
+                </div>
+                <div class="footer-details">
+                    <h3>Working Hours</h3>
+                    <p>Mon - Fri: 9am - 8pm</p>
+                    <p>Sat - Sun: Closed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <nav class="nav-bottom">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pets.html">Pets</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+        <p>© Copyrights are Reserved by <b>Jasphin Vijay</b></p>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
